@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat and Bulb Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto h-screen grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 justify-center">
+                <div class="flex flex-col items-center justify-center h-screen   w-[100%] ">
+                    <img src="https://ik.imagekit.io/yuva252003/Screenshot%202024-08-31%20202153.png?updatedAt=1725116023588" alt="bulb" id="bulb" class="h-44 w-[300px]">
+
+                    <img src="https://ik.imagekit.io/yuva252003/Screenshot%202024-08-31%20202102.png?updatedAt=1725116063345" alt="cat" id="cat" class="h-44 w-[300px]">
+                    
+                </div>
+               <div class="flex flex-col grid grid cols-1 md:grid-cols-1 ">
+                <button class="bg-lime-500 rounded-full text-white text-extrabold text-xl " id="on">On</button>
+                <button class="bg-rose-900 rounded-full text-white text-extrabold text-xl" id="Off">Off</button>
+               </div>
+          
+                
+
+            </div>
+        </div>
+ 
+<script>
+    const bulb=document.getElementById("bulb")
+    const cat=document.getElementById("cat")
+    const btnOn=document.getElementById("on")
+    const btnOff=document.getElementById("Off")
+    btnOn.addEventListener("click",()=>{
+        console.log("On Button Clicked")
+        cat.src="https://ik.imagekit.io/yuva252003/Screenshot%202024-08-31%20202102.png?updatedAt=1725116063345"
+        bulb.src="https://ik.imagekit.io/yuva252003/Screenshot%202024-08-31%20202153.png?updatedAt=1725116023588"
+
+    })
+    btnOff.addEventListener("click",()=>{
+        console.log("Off Button Clicked")
+        cat.src="https://ik.imagekit.io/yuva252003/Screenshot%202024-08-31%20202122.png?updatedAt=1725116040982"
+        bulb.src="https://media.istockphoto.com/id/488559402/photo/light-bulb-isolated-on-white.jpg?s=612x612&w=0&k=20&c=_M7_8U5RwG5f-wsm5vSWxmV5y3MWNzek3B9k8oWnCjE="
+    })
+</script>
+</body>
+</html>
